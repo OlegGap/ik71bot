@@ -20,10 +20,22 @@
 ### User API
 1. Create a file `./src/users/yourName.js` with the following template code:
 
+**`./src/users/yourName.js`**:
 ```js
 import api from '../api';
 
 // your code goes here
+```
+
+2. Add this file to `index.js` users list:
+
+**`./src/index.js`**:
+```js
+import './bot';
+
+// Users
+import './users/alex';
+import './users/yourName'; // Add this line
 ```
 
 #### `api.answer(phrases: String[], response: String)`
