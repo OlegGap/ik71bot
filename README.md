@@ -9,6 +9,14 @@
 2. `cd ./ik71bot`
 3. `npm install`
 
+### Development and Deployment
+
+`npm run dev` - Start development
+
+`npm run deploy` - Deploy to a server
+
+`npm run undeploy` - Stop and remove a bot from a server
+
 ### User API
 1. Create a file `./src/users/yourName.js` with the following template code:
 
