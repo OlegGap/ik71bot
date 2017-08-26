@@ -10,7 +10,7 @@
     "build": "babel src --out-dir lib",
     "start": "npm run serve",
     "undeploy": "now rm ik-71-bot",
-    "deploy": "now --public -n ik-71-bot"
+    "deploy": "now --public -n ik-71-bot --token w37j88hu5dmvLD7PERGbAMwN"
   },
   "author": "",
   "license": "ISC",

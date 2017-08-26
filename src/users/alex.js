@@ -4,7 +4,8 @@ api.answer(
   [
     'welcome',
     'hello',
-    'hi'
+    'hi',
+    'hey'
   ],
   'Привет, я бот IK-71 v2'
 );
