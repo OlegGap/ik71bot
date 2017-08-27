@@ -24,7 +24,7 @@ export default new class API {
     this.keyResponses = new Map();
     this.currentChat = null;
 
-    bot.on('message', ({text, chat: {id}}) => {
+    bot.onText(/(.*)/, ({text, chat: {id}}) => {
       this.currentChat = id;
       API.responseExecuteAction(this.responses, text, text);
     });
@@ -58,7 +58,7 @@ export default new class API {
     if (phrases instanceof Array)
       phrases.forEach(phrase => this.responseAction(phrase, callback));
     else
-      this.responses.set(phrases, callback);
+      this.responseAction(phrases, callback);
 
     if (resetCommand) this.command(null);
   }
